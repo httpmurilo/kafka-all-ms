@@ -1,9 +1,9 @@
 package io.httpmurilo.appproducer.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Order {
@@ -14,7 +14,10 @@ public class Order {
     private Customer customer;
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
-    private OrderItens itens;
+    @ManyToMany(mappedBy = "orderItens")
+    private List<OrderItens> orderItens = new ArrayList<>();
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
     private OrderShipment orderShipment;
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
     private Payment payment;
 }
