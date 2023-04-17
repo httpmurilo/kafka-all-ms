@@ -1,0 +1,7 @@
+io\httpmurilo\appproducer\entity\OrderOrderItens.class
+io\httpmurilo\appproducer\entity\OrderShipment.class
+io\httpmurilo\appproducer\entity\OrderStatus.class
+io\httpmurilo\appproducer\entity\Payment.class
+io\httpmurilo\appproducer\entity\Order.class
+io\httpmurilo\appproducer\entity\Customer.class
+io\httpmurilo\appproducer\entity\OrderItens.class
