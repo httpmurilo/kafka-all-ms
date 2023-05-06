@@ -1,7 +1,5 @@
 plugins {
-	id 'java'
-	id 'org.springframework.boot' version '3.0.5'
-	id 'io.spring.dependency-management' version '1.1.0'
+	id 'java-library'
 }
 
 group = 'io.httpmurilo'
@@ -12,12 +10,16 @@ repositories {
 	mavenCentral()
 }
 
-bootJar {
-	enabled = false
+
+tasks.named('jar') {
+	manifest {
+		attributes('Implementation-Title': 'app-commons-util',
+				'Implementation-Version': '0.0.1')
+	}
 }
 
-jar {
-	enabled = true
+java {
+	withSourcesJar()
 }
 
 
