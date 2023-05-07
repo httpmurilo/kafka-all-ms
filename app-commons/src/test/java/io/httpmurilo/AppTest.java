@@ -1,4 +1,4 @@
-package io.httmurilo;
+package io.httpmurilo;
 
 import static org.junit.Assert.assertTrue;
 

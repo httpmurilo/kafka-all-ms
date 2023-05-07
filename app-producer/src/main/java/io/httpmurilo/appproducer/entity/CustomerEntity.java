@@ -1,5 +1,4 @@
 package io.httpmurilo.appproducer.entity;
 
-public class Customer{
-
+public class CustomerEntity {
 }
