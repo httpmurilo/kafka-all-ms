@@ -14,7 +14,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app-api-gateway-zull" />
-            <option value="$PROJECT_DIR$/app-commons-util" />
+            <option value="$PROJECT_DIR$/app-commons" />
             <option value="$PROJECT_DIR$/app-consumer" />
             <option value="$PROJECT_DIR$/app-database" />
             <option value="$PROJECT_DIR$/app-producer" />

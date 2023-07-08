@@ -5,20 +5,19 @@ plugins {
 }
 
 group = 'io.httpmurilo'
-version = '0.0.1-SNAPSHOT'
+version = '1.0-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
-	mavenLocal()
 	mavenCentral()
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.0.5'
-	implementation 'io.httpmurilo:app-commons-util:1.0-SNAPSHOT'
-	implementation project(path: ':app-commons')
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.1.1'
+
 }
 
 tasks.named('test') {
